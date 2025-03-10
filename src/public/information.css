@@ -1,0 +1,21 @@
+.big-container{
+    display: block;
+}
+
+.header-text{
+    width: 40%;
+    float: left;
+    background-color: rgb(105, 97, 164);
+    height: 10vh;
+    text-align: center;
+}
+
+.input-form{
+    clear: both;
+    width: 40%;
+    float: left;
+    background-color: rgb(148, 143, 186);
+    height: 100vh;
+    text-align: center;
+}
+
