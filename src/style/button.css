@@ -1,0 +1,17 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .registration {
+    width: 150px;     /* 横幅 */
+    height: 50px;     /* 高さ */
+    font-size: 18px;  /* 文字サイズ */
+    padding: 10px;    /* 内側余白 */
+    border-radius: 10px; /* 角丸 */
+    background-color: #4CAF50; /* 背景色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

@@ -1,4 +1,9 @@
-.container{
-  background-color: brown;
+.information-preview{
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
 }
 
+.information{
+  flex-shrink: 0;
+}

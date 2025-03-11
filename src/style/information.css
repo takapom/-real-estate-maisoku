@@ -1,21 +1,27 @@
+/* コンテナ全体 */
 .big-container{
     display: block;
-}
-
-.header-text{
-    width: 40%;
+  }
+  
+  .header-text{
+    width: 100%;
+    padding: 5px;
     float: left;
     background-color: rgb(105, 97, 164);
     height: 10vh;
     text-align: center;
-}
-
-.input-form{
+  }
+  
+  .information-text{
+    font-size: 40px;
+  }
+  
+  .input-form{
     clear: both;
-    width: 40%;
+    width: 100%;
+    padding: 5px;
     float: left;
     background-color: rgb(148, 143, 186);
     height: 100vh;
     text-align: center;
-}
-
+  }
