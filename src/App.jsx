@@ -5,26 +5,30 @@ import './App.css';
 import { createContext, useState } from "react";
 
 export const InfomationContext = createContext([
-    { name : "" , price : 0 }, () => {}
+    { name : "" , rent : 0, area: "", addres: "", station: "", publiced: "" }, () => {}
 ]);
 
 function App() {
   const [value, setValue] = useState({
-    name : "",
-    price : 0
+    name : '',
+    rent : 0,
+    area: '',
+    address: '',
+    station:'',
+    published:'',
   });
 
   return (
+    <InfomationContext.Provider value={[value, setValue]}>
     <div className='information-preview'>
       <div className='information'>
-        <InfomationContext.Provider value={[value, setValue]}>
           <Information />
-        </InfomationContext.Provider>
       </div>
       <div className='preview'>
         <Preview />
       </div>
     </div>
+  </InfomationContext.Provider>
   );
 }
 

@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { InfomationContext } from '../App.jsx';
 
 const InputItem = () => {
-  console.log('aaaa')
   const [inputValue, setInputValue] = useState({
     name: '',
     rent: '',
@@ -14,11 +13,13 @@ const InputItem = () => {
 
   const InputChange = (e) => {
     const { id, value } = e.target;
-    setInputValue((prev) => ({
-      ...prev,
-      [id]: value,
-    }));
-  };
+    const newInputValue = {
+        ...inputValue,
+        [id]: value,
+    };
+    setInputValue(newInputValue);
+    setValue(newInputValue);
+  }
 
   const [value, setValue] = useContext(InfomationContext);
 
