@@ -1,5 +1,4 @@
-import InputItem from './components/Input.jsx'
-import Information from "./components/information"
+import Information from "./components/Information"
 import Preview from "./components/Preview"
 import './App.css';
 import { createContext, useState } from "react";
