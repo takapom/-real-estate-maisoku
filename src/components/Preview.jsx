@@ -1,52 +1,3 @@
-// import { useContext, useState } from "react";
-// import "../style/preview.css";
-// import { InfomationContext } from "../App";
-
-// export default function Preview() {
-//     const [value, setValue] = useContext(InfomationContext);
-//     return (
-//         <div className="preview-main">
-//             <div className="preview-header">
-//                 <div className="preview-bukkenmei">
-//                     {value.name === "" ? <h2>物件名</h2> : <h2>{value.name}</h2>}
-//                 </div>
-//                 <div className="preview-yachin">
-//                     {value.price === 0 ? <h2>家賃</h2> : <h2>{value.rent}円</h2>}
-//                 </div>
-//             </div>
-//             <div className="preview-body">
-//                 <div className="preview-images">
-//                     <div className="preview-gaikan">
-//                     {value.name === "" ? <h2>面積</h2> : <h2>{value.area}</h2>}
-//                     </div>
-//                     <div className="preview-naikan">
-//                     {value.name === "" ? <h2>最寄駅</h2> : <h2>{value.station}</h2>}
-//                     </div>
-//                 </div>
-//                 <div className="preview-shosai">
-//                     <div className="preview-info">
-//                         <div className="preview-madori">
-//                             <h2>間取り</h2>
-//                         </div>
-//                         <div className="preview-otherinfo">
-//                             <div className="preview-access_placeholder">
-//                                 <h2>アクセス</h2>
-//                             </div>
-//                             <div className="preview-joken_placeholder">
-//                                 <h2>契約条件</h2>
-//                                 <h2>必須条件</h2>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div className="preview-bukken_info_placeholder">
-//                         <h2>物件情報</h2>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
 import { useContext, useState } from "react";
 import { MapPin, Train, Home, Calendar, Maximize, Key, Shield, Info, Star, Coffee, ShoppingBag, School, ParkingMeterIcon as Park, Heart, Share, Printer } from 'lucide-react';
 import "../style/preview.css";
@@ -87,7 +38,7 @@ export default function Preview() {
         <div className="action-buttons">
           <button className="action-button"><Heart size={18} /> お気に入り</button>
           <button className="action-button"><Share size={18} /> シェア</button>
-          <button className="action-button"><Printer size={18} /> 印刷</button>
+          <button className="action-button"><Printer size={18} /> PDF</button>
         </div>
       </div>
       
@@ -164,7 +115,7 @@ export default function Preview() {
               <div className="address-line">
                 <span className="address-label">住所</span>
                 <span className="address-value">
-                  {value.prefecture || "東京都"}{value.city || "渋谷区"}{value.address || "神南1-2-3"}
+                  {value.prefecture || "大阪府"}{value.city || "渋谷区"}{value.address || "神南1-2-3"}
                 </span>
               </div>
               <div className="station-access">

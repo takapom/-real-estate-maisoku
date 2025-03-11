@@ -78,7 +78,7 @@ const InputItem = () => {
 
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
       <label htmlFor="input-field-4" style={{ marginBottom: '5px', fontSize: '18px', fontWeight: "bold" }}>
-        面積
+        専有面積
       </label>
       <input
         type="text"
@@ -149,6 +149,90 @@ const InputItem = () => {
         type="text"
         id="published"
         value={inputValue.published}
+        onChange={InputChange}
+        style={{
+          width: '300px',
+          height: '20px',
+          fontSize: '16px',
+          padding: '10px',
+          borderRadius: '10px',
+          border: '1px solid #ccc',
+          marginBottom: '20px',
+        }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+      <label htmlFor="input-field-4" style={{ marginBottom: '5px', fontSize: '18px', fontWeight: "bold" }}>
+        間取り
+      </label>
+      <input
+        type="text"
+        id="area"
+        value={inputValue.floorplan}
+        onChange={InputChange}
+        style={{
+          width: '300px',
+          height: '20px',
+          fontSize: '16px',
+          padding: '10px',
+          borderRadius: '10px',
+          border: '1px solid #ccc',
+          marginBottom: '20px',
+        }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+      <label htmlFor="input-field-4" style={{ marginBottom: '5px', fontSize: '18px', fontWeight: "bold" }}>
+        物件種別
+      </label>
+      <input
+        type="text"
+        id="area"
+        value={inputValue.area}
+        onChange={InputChange}
+        style={{
+          width: '300px',
+          height: '20px',
+          fontSize: '16px',
+          padding: '10px',
+          borderRadius: '10px',
+          border: '1px solid #ccc',
+          marginBottom: '20px',
+        }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+      <label htmlFor="input-field-4" style={{ marginBottom: '5px', fontSize: '18px', fontWeight: "bold" }}>
+        築年数
+      </label>
+      <input
+        type="text"
+        id="area"
+        value={inputValue.area}
+        onChange={InputChange}
+        style={{
+          width: '300px',
+          height: '20px',
+          fontSize: '16px',
+          padding: '10px',
+          borderRadius: '10px',
+          border: '1px solid #ccc',
+          marginBottom: '20px',
+        }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+      <label htmlFor="input-field-4" style={{ marginBottom: '5px', fontSize: '18px', fontWeight: "bold" }}>
+        向き
+      </label>
+      <input
+        type="text"
+        id="area"
+        value={inputValue.area}
         onChange={InputChange}
         style={{
           width: '300px',
