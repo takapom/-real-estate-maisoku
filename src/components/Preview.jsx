@@ -1,7 +1,7 @@
 import "../style/preview.css";
 import { useContext, useState } from "react";
 import { InfomationContext } from "../App";
-import { formatNumber } from "../utils/formatnumber";
+import { formatNumber } from "../utils/Formatnumber";
 
 
 export default function Preview() {
