@@ -1,8 +1,6 @@
 import React from 'react';
 import "../style/information.css"
 import Input from './Input.jsx';
-import Button from './Button.jsx';
-import "../style/information.css"
 
 const Information = () => {
   return (
@@ -10,9 +8,11 @@ const Information = () => {
         <div className='header-text'>
             <h2 className='text'>情報入力欄</h2>
         </div>
-        <div className='input-form'>
+        <div
+          className='input-form'
+          style={{ maxHeight: "45em", overflowY: "scroll" }}
+        >
           <Input />
-          <Button />
         </div>
     </div>
   )
