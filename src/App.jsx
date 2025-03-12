@@ -1,4 +1,4 @@
-import Information from "./components/information"
+import Information from "./components/Information"
 import Preview from "./components/preview"
 import Title from "./components/title";
 import Printpdf from './components/PrintPDF'
