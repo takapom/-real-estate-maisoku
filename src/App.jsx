@@ -1,5 +1,5 @@
 import Information from "./components/Information"
-import Preview from "./components/preview"
+import Preview from "./components/preview";
 import Title from "./components/title";
 import Printpdf from './components/PrintPDF'
 import './App.css';
