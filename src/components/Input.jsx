@@ -253,7 +253,7 @@
 
 import React, { createContext, useContext, useState } from 'react';
 import { InfomationContext } from '../App.jsx';
-import Preview from './preview.jsx';
+import Preview from './Preview.jsx';
 import { FilledInput } from '@mui/material';
 import { useRef } from 'react';
 
